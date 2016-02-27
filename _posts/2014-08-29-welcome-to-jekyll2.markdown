@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  "Ubuntu install"
-date:   2014-02-28 02:44:25
+title:  "Welcome to Jekyll!"
+date:   2014-08-29 14:34:25
 categories: jekyll update
 tags: featured
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
 ---
-
 ### vmware workstaion pro 설치
  - workstations 12 pro trial 설치 후에는 serial key를 넣어야 하는데 이건 인터넷에 치면 나온다.
  - 설치할때 바로 iso 이미지로 시작하지 말고 없는 걸로 한다음에 하드웨어 설정에서 cd-rom 에 iso 파일을 넣어 주자. 그래야 설치할 때 한글로 하기 편하다.
@@ -37,6 +36,22 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
  - git clone 으로 받은 후에도 로컬 디렉터리 이름은 변경 가능
 
 
+
+You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+
+To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll’s dedicated Help repository][jekyll-help].
 
 {% highlight js %}
 
