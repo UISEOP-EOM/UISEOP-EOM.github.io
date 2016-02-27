@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Ubuntu install"
-date:   2016-02-28 02:44:25
+date:   2014-02-28 02:44:25
 categories: jekyll update
 tags: featured
 image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
