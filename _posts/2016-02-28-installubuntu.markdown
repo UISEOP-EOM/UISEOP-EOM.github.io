@@ -29,3 +29,4 @@
  - 첫번째 방법은 아예 깨끗한 데에 디렉터리 통쨰로 받아오는 방법 이떈 upstream 이 자동으로 설정된다.
  - 두번째 방법은 git fetch 를 한 후에 git merge origin/master를 하고 git branch --set-upstream-to=origin/master master 이라고 하면 된다.
  - master branch 가 없다는 에러는 아마 init을 하고 나면 master branch 조차 없다고 인식해서 인듯 함. 
+ - git clone 으로 받은 후에도 로컬 디렉터리 이름은 변경 가능
