@@ -22,8 +22,13 @@ image: /assets/article_images/2014-08-29-welcome-to-jekyll/desktop.jpg
  - 우분투에 oh my zsh 설치하는 방법은 https://gist.github.com/tsabat/1498393 참고
  - ruby를 까는 것은 조심해서 해야한다. .zshrc 파일로 경로 바꾸는 것 잊지말고 다음 사이트를 참고할 것 https://cbednarski.com/articles/installing-ruby/
  - 이건 확실하진 않지만 그 외 하드웨어적인 세팅을 하면 성능이 향상된다고 한다. http://programmingsummaries.tistory.com/301 참고할 것
- -  
+ - 
 
+### jekyll
+ - ~/.gemrc 에다가는 위에 페이지에서 하라는 대로 하기
+ - gem install bundle 을 한다. bundle 은 gem 패키지 관리자이다.
+ - ~/Gemfile 을 만든다.
+ - source 'https://rubygems.org' gem 'jekyll' gem 'github-pages'
 ### Git global config and time caching
 
  - https://help.github.com/articles/which-remote-url-should-i-use/ 참고할 것.
