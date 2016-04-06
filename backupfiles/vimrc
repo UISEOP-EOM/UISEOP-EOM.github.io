@@ -1,0 +1,75 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/AutoComplPop'
+Plugin 'taglist-plus' 
+Plugin 'zeis/vim-kolor'
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+"Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+"Plugin 'L9'
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+"Plugin 'ascenator/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+au VimEnter *  NERDTree
+map <F7> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+map <F8> :TlistToggle<CR>
+filetype on
+" Tag list가 사용하는 ctags의 경로 설정
+ let Tlist_Ctags_Cmd = "/usr/bin/ctags"
+ let Tlist_Inc_Winwidth = 0
+ let Tlist_Exit_OnlyWindow = 0
+ let Tlist_Auto_Open = 0
+" Tag list 창을 오른쪽으로 생성
+ let Tlist_Use_Right_Window = 1
+
+
+"Options for Kolor
+" 256-color terminal
+ set t_Co=256
+ let g:kolor_italic=1                    " Enable italic. Default: 1
+ let g:kolor_bold=1                      " Enable bold. Default: 1
+ let g:kolor_underlined=0                " Enable underline. Default: 0
+ let g:kolor_alternative_matchparen=0    " Gray 'MatchParen' color. Default: 0
+ colorscheme kolor
+set ts=2
+set sw=2
+set sts=2
+set ai
+set nu
+syntax on
