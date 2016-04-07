@@ -13,6 +13,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'taglist-plus' 
 Plugin 'zeis/vim-kolor'
+Plugin 'vim-airline/vim-airline'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
@@ -67,6 +68,10 @@ filetype on
  let g:kolor_underlined=0                " Enable underline. Default: 0
  let g:kolor_alternative_matchparen=0    " Gray 'MatchParen' color. Default: 0
  colorscheme kolor
+
+"Options for vim-airline
+ let g:airline#extensions#tabline#enabled = 1
+ set laststatus=2 "to make airline work without nerdtree
 set ts=2
 set sw=2
 set sts=2
