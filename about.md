@@ -4,6 +4,16 @@ title: About
 permalink: /about/
 ---
 
+About life.
+
+Where the tides deliver mee au.
+
+Je suis voyageur, 
+mais où je ne sais pas
+
+
+___
+
 A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme 
 [Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](blog.base68.com).
 
